@@ -12,7 +12,8 @@ int main()
     geek = make_tuple(10,'f', 15.5);
     // Printing initial tuple values using get()
     cout<<"the intial values : ";
-     cout << get<0>(geek) << " " << get<1>(geek)<< " " << get<2>(geek) << endl;
+     cout << get<0>(geek) << " " << get<1>(geek)
+          << " " << get<2>(geek) << endl;
     // Use of get() to change values of tuple
     get<1>(geek) = 'b';
     get<2>(geek) =  20.5;
@@ -20,7 +21,8 @@ int main()
 
     // Printing initial tuple values using get()
     cout<<"the final values : ";
-     cout << get<0>(geek) << " " << get<1>(geek)<< " " << get<2>(geek) << endl;
+        cout << get<0>(geek) << " " << get<1>(geek)<< " " 
+             << get<2>(geek) << endl;
     return 0;
 
 }
